@@ -6,6 +6,7 @@ dew.js 需要 Node.js, MySQL, Memcached 等服务软件才能正常运行
 
 示例后台用户名和密码
 username: admin
+
 password: admin123
 
 
@@ -41,7 +42,6 @@ node_modules\dewjs\lib\Server\Web\Web.json
     }, 
 
 请根据实际服务端设置修改 Web.json 文件
-
 
 启动 Dew.js 方式为 node [filepath]/dew.js
 
