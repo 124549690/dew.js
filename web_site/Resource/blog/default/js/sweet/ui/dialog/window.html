@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8">
+<head>
+<title>window</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../../sweet.js"></script>
+<script type="text/javascript" src="./dialog.js"></script>
+<link href="./dialog.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../contextmenu/contextmenu.js"></script>
+<link href="../contextmenu/contextmenu.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript">
+sweet.ready(function () {
+
+win = new sweet.ui.dialog.window;
+win.setIcon('./demoImages/changeWallpaper.gif');
+win.setTitle('皮肤');
+win.setButton(7);
+win.display();
+
+win.setSize(640, 480);
+win.setMinSize(320, 240);
+// win.setState(128);
+
+
+win.on('maximize', function () {alert('最大化');});
+win.on('minimize', function () {alert('最小化');});
+
+win.on('restore', function () {alert('还原');});
+// win.on('close', function () {alert('关闭');});
+
+});
+</script>
+<body>
+</body>
+</html>

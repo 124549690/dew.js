@@ -1,0 +1,30 @@
+[
+    {
+        "url" : "/", 
+        "forward" : 
+        {
+            "controller" : "PostController", 
+            "action" : "getsAction"
+        }
+    }, 
+    
+    {
+        "url" : "/ping", 
+        "allow" : ["session"], 
+        "dispatch" : 
+        {
+            "controller" : "AdminCenterController", 
+            "action" : "pingAction"
+        }
+    }, 
+    
+    {
+        "url" : "/valid/validCode", 
+        "allow" : ["session"], 
+        "dispatch" : 
+        {
+            "controller" : "ValidController", 
+            "action" : "validCodeAction"
+        }
+    }
+]

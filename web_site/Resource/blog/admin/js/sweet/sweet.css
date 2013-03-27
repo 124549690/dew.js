@@ -1,0 +1,18 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+div.sweetGlobalCover
+{
+		background-image: url('./images/global-cover.gif');
+		position: absolute;
+		z-index: 65533;
+		top: 0;
+		left: 0;
+}

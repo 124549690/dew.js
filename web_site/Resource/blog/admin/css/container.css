@@ -1,0 +1,47 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+@charset "utf-8";
+
+#container
+{
+		margin: 20px auto 0 auto;
+		width: 900px;
+}
+
+div.toolbar
+{
+		border-top: 1px solid #E5E5E5;
+		border-bottom: 1px solid #E5E5E5;
+		cursor: default;
+		height: 42px;
+		
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		user-select: none;
+}
+
+div.content-wrap
+{
+		border-top: 1px solid #E5E5E5;
+		border-bottom: 1px solid #E5E5E5;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+}
+
+div.content
+{
+		height: 100%;
+		overflow: hidden;
+		margin-right: 12px;
+}
+
+

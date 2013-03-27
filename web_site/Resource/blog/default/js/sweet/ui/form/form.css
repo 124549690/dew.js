@@ -1,0 +1,50 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+/** 按钮 **/
+/*********************************************************************************/
+.uiButton
+{
+		background: url("./images/button.png") repeat-y 0px -30px;
+		display: inline-block;
+		border: 1px solid;
+		border-color: #CCC #999 #999 #CCC;
+		color: #333;
+}
+
+.uiButtonDown
+{
+		background: #D2D2D2 none;
+}
+
+.uiButton button
+{
+		background-color: transparent;
+		border-width: 0;
+		padding: 0;
+		text-align: center;
+		letter-spacing: 2px;
+		cursor: pointer;
+		overflow: hidden;
+		outline: 0 none;
+}
+
+.uiButton, .uiButton button
+{
+		width: 44px;
+		height: 22px;
+		font-size: 12px;
+}
+
+/* 清除火狐按钮虚线 */
+.uiButton button::-moz-focus-inner{border-color:transparent!important;}
+/*********************************************************************************/
+
+

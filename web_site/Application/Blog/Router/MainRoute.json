@@ -1,0 +1,102 @@
+[
+    {
+        "load" : "IndexRoute.json"
+    }, 
+    
+    {
+        "load" : "PostRoute.json", 
+        "extend" : 
+        {
+            "allow" : ["session"], 
+            "flow" : 
+            [
+                {
+                    "controller" : "OptionsController", 
+                    "action" : "setSiteOptionsFlow"
+                }, 
+                {
+                    "controller" : "OptionsController", 
+                    "action" : "setSiteHeadInfoFlow"
+                }, 
+                {
+                    "controller" : "OptionsController", 
+                    "action" : "setSiteUrlFlow"
+                }
+            ]
+        }
+    }, 
+    
+    {
+        "load" : "CommentRoute.json", 
+        "extend" : 
+        {
+            "flow" : 
+            [
+                {
+                    "controller" : "OptionsController", 
+                    "action" : "setSiteOptionsFlow"
+                }
+            ]
+        }
+    }, 
+    
+    {
+        "load" : "UserRoute.json", 
+        "extend" : 
+        {
+            "allow" : ["session"]
+        }
+    }, 
+    
+    {
+        "load" : "AdminCenterRoute.json", 
+        "extend" : 
+        {
+            "allow" : ["session"], 
+            "flow" : 
+            [
+                {
+                    "controller" : "UserController", 
+                    "action" : "userAuthFlow"
+                }, 
+                {
+                    "controller" : "UserController", 
+                    "action" : "isLoginFlow"
+                }
+            ]
+        }
+    }, 
+    
+    {
+        "load" : "AdminPostRoute.json", 
+        "extend" : 
+        {
+            "allow" : ["session"], 
+            "flow" : 
+            [
+                {
+                    "controller" : "UserController", 
+                    "action" : "userAuthFlow"
+                }, 
+                {
+                    "controller" : "UserController", 
+                    "action" : "isLoginAjaxFlow"
+                }
+            ]
+        }
+    }, 
+    
+    {
+        "load" : "OptionsRoute.json", 
+        "extend" : 
+        {
+            "flow" : 
+            [
+                {
+                    "controller" : "OptionsController", 
+                    "action" : "setSiteOptionsFlow"
+                }
+            ]
+        }
+    }
+]

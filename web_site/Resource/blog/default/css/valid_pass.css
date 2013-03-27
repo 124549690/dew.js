@@ -1,0 +1,50 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+@charset "utf-8";
+
+body
+{
+		background-color: #F7F7F7;
+		font-family: Arial;
+		font-size: 12px;
+		line-height: 150%;
+}
+
+.main
+{
+		background-color: #FFFFFF;
+		border: 1px solid #DFDFDF;
+		border-radius: 10px 10px 10px 10px;
+		color: #666666;
+		font-size: 12px;
+		list-style: none outside none;
+		margin: 60px auto 0;
+		padding: 30px 10px;
+		width: 650px;
+}
+
+.main p
+{
+		line-height: 18px;
+		margin: 5px 20px;
+}
+
+.main a
+{
+    color: #3FA7CB;
+    text-decoration: none;
+}
+
+.main a:hover
+{
+		color: #3CBCE7;
+    text-decoration: underline;
+}

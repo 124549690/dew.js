@@ -1,0 +1,429 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+div.uiDialogWindow
+{
+		background-color: #FFF;
+		border: 1px solid #CCCCCC;
+		visibility: hidden;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+		
+		z-index: 1000;
+		
+		width: 320px;
+		height: 22px;
+		
+		/* CSS 3 */
+		border-radius: 4px 4px 0 0;
+}
+
+div.uiWindowFrame
+{
+		overflow: hidden;
+}
+
+div.uiWindowTitleBar
+{
+		height: 23px;
+}
+
+div.uiWindowTitleBar p
+{
+		margin: 0;
+}
+
+div.uiWindowTitleBarContainer
+{
+		background: url('./images/dialog-title.gif') repeat-x;
+		border-bottom: 1px solid #CCCCCC;
+		line-height: 22px;
+		height: 22px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -10;
+}
+
+div.uiWindowTitleBarCover
+{
+		background-image: url('./images/dialog-cover.gif');
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+}
+
+img.uiWindowTitleIcon
+{
+		position: absolute;
+		top: 3px;
+		left: 5px;
+		width: 16px;
+		height: 16px;
+		visibility: hidden;
+}
+
+p.uiWindowTitleText
+{
+		text-align: center;
+		font-size: 12px;
+		overflow: hidden;
+		cursor: default;
+}
+
+div.uiWindowTitleButtonContainer
+{
+    position: absolute;
+		z-index: 11;
+    right: 0;
+		top: 0;
+}
+
+p.uiWindowTitleBarContextmenuMinimize, 
+p.uiWindowTitleBarContextmenuMaximize, 
+p.uiWindowTitleBarContextmenuRestore, 
+p.uiWindowTitleBarContextmenuClose
+{
+		background: url('./images/dialog-controbar.gif') no-repeat;
+}
+
+p.uiWindowTitleBarContextmenuMinimize {background-position: -48px -3px;}
+p.uiWindowTitleBarContextmenuRestore {background-position: -26px -3px;}
+p.uiWindowTitleBarContextmenuMaximize {background-position: -4px -3px;}
+p.uiWindowTitleBarContextmenuClose {background-position: -70px -3px;}
+
+a.uiWindowClose, 
+a.uiWindowMinimize, 
+a.uiWindowMaximize, 
+a.uiWindowRestore
+{
+		background: url('./images/dialog-controbar.gif') no-repeat;
+		outline: none;
+		width: 22px;
+		height: 22px;
+		float: left;
+		cursor: default;
+}
+
+a.uiWindowMinimize {background-position: -45px 0;}
+a.uiWindowMinimize:hover {background-position: -45px -22px;}
+
+a.uiWindowRestore {background-position: -23px 0;}
+a.uiWindowRestore:hover {background-position: -23px -22px;}
+
+a.uiWindowMaximize {background-position: -1px 0;}
+a.uiWindowMaximize:hover {background-position: -1px -22px;}
+
+a.uiWindowClose {background-position: -67px 0;}
+a.uiWindowClose:hover {background-position: -67px -22px;}
+
+div.uiWindowResizeUp, 
+div.uiWindowResizeRight, 
+div.uiWindowResizeDown, 
+div.uiWindowResizeLeft
+{
+		background-image: url('./images/dialog-cover.gif');
+		background-color: transparent;
+		position: absolute;
+		overflow: hidden;
+		z-index: 12;
+}
+
+div.uiWindowResizeLeftUp, 
+div.uiWindowResizeRightUp, 
+div.uiWindowResizeRightDown, 
+div.uiWindowResizeLeftDown
+{
+		background-image: url('./images/dialog-cover.gif');
+		background-color: transparent;
+		position: absolute;
+		overflow: hidden;
+		z-index: 13;
+}
+
+div.uiWindowResizeOn, div.uiWindowResizeOn, 
+div.uiWindowResizeOn, div.uiWindowResizeOn, 
+div.uiWindowResizeOn, div.uiWindowResizeOn, 
+div.uiWindowResizeOn, div.uiWindowResizeOn
+{
+		cursor: default!important;
+}
+
+div.uiWindowResizeUp, 
+div.uiWindowResizeDown
+{
+		height: 3px;
+		width: 100%;
+}
+
+div.uiWindowResizeRight, 
+div.uiWindowResizeLeft
+{
+		width: 3px;
+		height: 100%;
+}
+
+div.uiWindowResizeLeftUp, 
+div.uiWindowResizeRightUp, 
+div.uiWindowResizeRightDown, 
+div.uiWindowResizeLeftDown
+{
+		height: 6px;
+		width: 6px;
+}
+
+div.uiWindowResizeLeftUp
+{
+		cursor: nw-resize;
+		left: -1px;
+		top: -1px;
+}
+
+div.uiWindowResizeRightUp
+{
+		cursor: ne-resize;
+		right: -1px;
+		top: -1px;
+}
+
+div.uiWindowResizeUp
+{
+		cursor: n-resize;
+		top: -1px;
+}
+
+div.uiWindowResizeRight
+{
+		cursor: e-resize;
+		right: -1px;
+		top: 0;
+}
+
+div.uiWindowResizeRightDown
+{
+		cursor: se-resize;
+		right: 0;
+		bottom: 0;
+}
+
+div.uiWindowResizeDown
+{
+		cursor: s-resize;
+		bottom: -1px;
+}
+
+div.uiWindowResizeLeftDown
+{
+		cursor: sw-resize;
+		bottom: -1px;
+		left: -1px;
+}
+
+div.uiWindowResizeLeft
+{
+		cursor: w-resize;
+		top: 0;
+		left: -1px;
+}
+
+
+/***** global *****/
+/**************************************************/
+div.uiDialogButton
+{
+    display: inline;
+    float: right;
+    margin-right: 4px;
+    width: 120px;
+}
+div.uiDialogButton div
+{
+    display: inline;
+    float: right;
+    margin: 0 2px 0 3px;
+}
+/**************************************************/
+
+/***** alert and confirm and prompt *****/
+/**************************************************/
+div.uiDialogAlert, 
+div.uiDialogConfirm
+{
+		margin-top: 7px;
+}
+
+div.uiDialogAlertContent, 
+div.uiDialogConfirmContent, 
+div.uiDialogPromptContent
+{
+		height: 60px;
+		overflow: hidden;
+		position: relative;
+}
+
+div.uiDialogIcon
+{
+		position: absolute;
+		left: 14px;
+		top: 7px;
+}
+
+div.uiDialogAlertright
+{
+		background-image: url("./images/dialog-right.gif");
+		height: 46px;
+		width: 50px;
+}
+
+div.uiDialogAlertwarning
+{
+		background-image: url("./images/dialog-warning.gif");
+		height: 48px;
+		width: 46px;
+}
+
+div.uiDialogAlertText, 
+div.uiDialogConfirmText
+{
+		color: #3B3B3B;
+		font-size: 12px;
+		margin-left: 76px;
+		padding-right: 8px;
+}
+
+div.uiDialogConfirmIcon
+{
+		background-image: url("./images/dialog-confirm.png");
+		height: 48px;
+		width: 48px;
+}
+
+div.uiDialogPrompt
+{
+		position: absolute;
+		width: 100%;
+}
+
+div.uiDialogPromptContent
+{
+		position: relative;
+		margin-top: 7px;
+}
+
+div.uiDialogPromptIcon
+{
+		background-image: url("./images/dialog-prompt.png");
+		height: 48px;
+		width: 48px;
+}
+
+div.uiDialogPromptInput
+{
+		font-size: 12px;
+		margin-left: 68px;
+		padding-top: 16px;
+}
+
+div.uiDialogPromptInput input
+{
+		background-image: url('./images/dialog-prompt.gif');
+		border: 1px solid #B6B6B6;
+		display: inline-block;
+		font-size: 14px;
+		height: 14px;
+		padding: 4px;
+		vertical-align: middle;
+		width: 234px;
+}
+/**************************************************/
+
+/***** state *****/
+/**************************************************/
+div.uiDialogState
+{
+    position: absolute;
+    text-align: center;
+    top: 42%;
+    width: 100%;
+    z-index: 65533;
+    color: #5C5C5C;
+		visibility: hidden;
+}
+
+span.uiDialogStateWrap
+{
+    background: url('./images/dialog-state.png') 0 -54px repeat-x;
+    position: relative;
+    display: inline-block;
+    padding: 0 18px 0 10px;
+    color: #606060;
+    
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Verdana, Arial, 'Lucida Grande', sans-serif;
+    
+    height: 54px;
+    line-height: 54px;
+}
+
+span.uiDialogStateBgLeft
+{
+    position: absolute;
+    top: 0;
+    height: 54px;
+    
+    width: 45px;
+    left: -45px;
+    
+    background: url("./images/dialog-state.png") no-repeat -6px 0px;
+}
+
+span.uiDialogStateIcon
+{
+		width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    left: -32px;
+}
+
+span.uiDialogStateIconwait
+{
+    background-image: url("./images/dialog-wait.gif");
+}
+
+span.uiDialogStateIconright
+{
+    background: url("./images/dialog-state.png") 0 -110px;
+}
+
+span.uiDialogStateIconwarning
+{
+    background: url("./images/dialog-state.png") 0 -143px;
+}
+
+span.uiDialogStateIconerror
+{
+    background: url("./images/dialog-state.png") 0 -176px;
+}
+
+span.uiDialogStateBgRight
+{
+    background: url("./images/dialog-state.png") no-repeat 0 0;
+    position: absolute;
+    right: -6px;
+    top: 0;
+    height: 54px;
+    width: 6px;
+}
+/**************************************************/

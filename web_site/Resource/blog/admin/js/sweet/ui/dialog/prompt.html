@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8">
+<head>
+<title>prompt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="../../sweet.js"></script>
+
+<script type="text/javascript" src="./dialog.js"></script>
+<link href="./dialog.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../contextmenu/contextmenu.js"></script>
+<link href="../contextmenu/contextmenu.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../form/form.js"></script>
+<link href="../form/form.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+sweet.ready(function () {
+
+document.body.style.width = '1440px';
+document.body.style.height = '900px';
+
+_prompt = new sweet.ui.dialog.prompt;
+
+_prompt.setTitle('输入');
+
+_prompt.on('ok', function (text)
+{
+		alert('你输入了: ' + text);
+});
+
+_prompt.on('cancel', function ()
+{
+		alert('您点击了取消按钮');
+});
+
+_prompt.display();
+
+});
+</script>
+</head>
+<body>
+</body>
+</html>

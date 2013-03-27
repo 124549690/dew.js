@@ -1,0 +1,117 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+@charset "utf-8";
+
+body
+{
+		padding: 0;
+		margin: 0;
+		font-family: Tahoma, sans-serif;
+		background-image: url('../images/bg.gif');
+}
+
+div.login
+{
+		width: 250px;
+		margin: 12% auto 0% auto;
+}
+
+div.item
+{
+		font-size: 12px;
+		padding: 0px;
+		margin: 12px 0px;
+}
+
+div.item label
+{
+		letter-spacing: 2px;
+		color: #595959;
+		vertical-align: middle;
+		padding-right: 4px;
+}
+
+div.item div
+{
+		display: inline;
+}
+
+div.item span
+{
+		position: absolute;
+		margin: 7px 0px 0px 4px;
+		width: 18px;
+		height: 18px;
+		font-size: 12px;
+}
+
+div.username span
+{
+		background: transparent url('../images/login-user.png') no-repeat;
+}
+
+div.password span
+{
+		background: transparent url('../images/login-pass.png') no-repeat;
+}
+
+div.vaild-code span
+{
+		background: transparent url('../images/login-verify.png') no-repeat;
+}
+
+div.item input
+{
+		border: #B6B6B6 solid 1px;
+		vertical-align: middle;
+		font-weight: bold;
+		background: transparent url('../images/input-back.gif');
+		display: inline-block;
+		font-size: 16px;
+		height: 18px;
+		padding: 4px 4px 4px 24px;
+}
+
+div.username input, 
+div.password input
+{
+		width: 168px;
+}
+
+div.vaild-code input
+{
+		width:62px;
+		text-transform:uppercase;
+}
+
+div.vaild-code img
+{
+		height: 30px;
+		width: 90px;
+		margin-left: 10px;
+		vertical-align: middle;
+}
+
+div.formButton, div.formButton button
+{
+		color: #333333;
+		font-size: 16px;
+		height: 28px;
+		width: 68px;
+}
+
+#vaild-code
+{
+		display: inline;
+		margin-left: 7px;
+		vertical-align: middle;
+		cursor: default;
+}

@@ -1,0 +1,213 @@
+﻿
+----------------------------
+browser
+----------------------------
+browser.isStrict
+browser.isGecko
+browser.isWebkit
+browser.isIE
+
+browser.ie
+browser.opera
+browser.chrome
+browser.safari
+browser.firefox
+browser.version
+----------------------------
+
+----------------------------
+cookie
+----------------------------
+cookie.setcookie (key:string, val:string [, second:number [, path:string [, domain:string, [, secure:boolean]]])
+cookie.getcookie (key:string)
+cookie.setrawcookie (key:string, val:string [, second:number [, path:string [, domain:string, [, secure:boolean]]])
+cookie.getrawcookie (key:string)
+----------------------------
+
+----------------------------
+queue [CircleQueue]
+----------------------------
+queue.push([var1:mixed [, var21:mixed [, ...]]])
+queue.pop()
+queue.unshift([var1:mixed [, var21:mixed [, ...]]])
+queue.shift()
+queue.empty()
+----------------------------
+
+----------------------------
+pools
+----------------------------
+pools.addObject([obj1:object [, obj2:object [, ...]]])
+pools.borrowObject()
+pools.returnObject(obj:object)
+----------------------------
+
+----------------------------
+events
+----------------------------
+events.emit(type:string [, arg1 [, arg2 [, ...]]])
+events.addListener(type:string, callback:function)
+events.on(type:string, callback:function)
+events.once(type:string, callback:function)
+events.removeListener(type:string, callback:function)
+events.removeAllListeners([type:string])
+events.listeners([type:string])
+----------------------------
+
+----------------------------
+cache
+----------------------------
+cache.remove(key)
+cache.removeAll()
+cache.add(key:string, val:mixed)
+cache.set(key:string, val:mixed)
+cache.get(key:string)
+cache.has(key:string)
+----------------------------
+
+----------------------------
+util
+----------------------------
+util.inherits(ctor:function, superCtor:function)
+util.mix(c:object, t:object)
+util.gettype(v:mixed)
+----------------------------
+
+----------------------------
+ajax
+----------------------------
+Event: 'loading'      // 正在载入 事件
+Event: 'loaded'       // 载入完成 事件
+Event: 'interactive'  // 交互 事件
+Event: 'complete'     // 完成 事件
+Event: 'error'        // 错误 事件
+
+ajax.setData(key:string, val:string)
+ajax.getData(key:string)
+ajax.setHeader(key:string, val:string)
+ajax.open(method:string, url:string)
+ajax.send()
+ajax.setFormElementData(node:HTMLFormElementObject)
+----------------------------
+
+----------------------------
+jsonp
+----------------------------
+Event: 'complete' // 完成 事件
+Event: 'error'    // 错误 事件
+
+jsonp.url
+jsonp.charset
+jsonp.setQuery(key:string, val:string)
+jsonp.send()
+----------------------------
+
+----------------------------
+load
+----------------------------
+Event: 'start'    // 开始
+Event: 'progress' // 步进
+Event: 'end'      // 结束
+Event: 'error'    // 错误，某个脚本15秒内未加载完成，直接报错
+
+load.add(name:string, url:string [, charset:string])
+load.exec(name:string or callback:function)
+load.before(name:string or callback:function)
+load.after(name:string or callback:function)
+----------------------------
+
+----------------------------
+animate
+----------------------------
+Event: 'start'  // 开始
+Event: 'end'    // 结束
+
+animate.addElement(node:HTMLDOM, param1:object [, param2:object [, ...]])
+animate.start()
+----------------------------
+
+----------------------------
+template
+----------------------------
+template.assign(key:string, val:string) or template.assign(obj:object)
+template.fetch(tpl:string)
+----------------------------
+
+----------------------------
+html
+----------------------------
+html(data:string)
+
+html.path(expr:string)
+html.setAttribute(key:string, val:string)
+html.removeAttribute(key:string)
+html.append(node:HTMLDOM)
+html.before(node:HTMLDOM)
+----------------------------
+
+----------------------------
+dom
+----------------------------
+dom.ID(name:string)
+dom.TAG(name:string)
+dom.CLASS(name:string)
+
+dom.hasClass(node:HTMLDOM, name:string)
+dom.addClass(node:HTMLDOM, name:string)
+dom.removeClass(node:HTMLDOM, name:string)
+
+dom.contains(child:HTMLDOM, parent:HTMLDOM)
+
+dom.addEvent(node:HTMLDOM, type:string, cb:function)
+dom.removeEvent(node:HTMLDOM, type:string, cb:function)
+
+dom.preventDefault(event:EVENTOBJECT)
+dom.stopPropagation(event:EVENTOBJECT)
+dom.stopEvent(event:EVENTOBJECT)
+
+dom.setStyle(node:HTMLDOM, key:string, val:string)
+dom.setStyles(node:HTMLDOM, opt:object)
+dom.getStyle(node:HTMLDOM, key:string)
+
+dom.getPageHeight()
+dom.getPageWidth()
+
+dom.getScrollTop()
+dom.getScrollLeft()
+
+dom.getViewHeight()
+dom.getViewWidth()
+
+dom.getElementPosition(node:HTMLDOM)
+dom.getImageSize(node:HTMLDOM)
+
+dom.insertCss(text:string)
+dom.insertJs(text:string)
+
+dom.removeNode(node:HTMLDOM)
+----------------------------
+
+----------------------------
+global hook
+----------------------------
+Event: 'click'
+Event: 'dblclick'
+
+Event: 'mouseover'
+Event: 'mouseout'
+Event: 'mousedown'
+Event: 'mouseup'
+Event: 'mousemove'
+
+Event: 'contextmenu'
+
+Event: 'keydown'
+Event: 'resize'
+----------------------------
+
+----------------------------
+func
+----------------------------
+func.strlen(text:string, charset:string)
+
+----------------------------

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8">
+<head>
+<title>scrollbar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../../sweet.js"></script>
+<script type="text/javascript" src="./scrollbar.js"></script>
+<link href="./scrollbar.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div style="width: 300px; height: 190px; border: 1px solid red; line-height: 400%; overflow: hidden; position: relative;" id="container">
+	<div style="height: 100%;overflow: hidden;" id="content">
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	一行文字.....<br>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+var scroll = new sweet.ui.scrollbar;
+scroll.append(document.getElementById('container'));
+scroll.setContainer(document.getElementById('content'));
+scroll.setPosition(10, 6);
+
+</script>
+</html>

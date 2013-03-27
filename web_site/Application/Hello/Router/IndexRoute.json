@@ -1,0 +1,11 @@
+[
+    {
+        "url" : "/", 
+        "param" : {"page" : 1}, 
+        "dispatch" : 
+        {
+            "controller" : "IndexController", 
+            "action" : "indexAction"
+        }
+    }
+]

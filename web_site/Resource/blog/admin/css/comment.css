@@ -1,0 +1,38 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+@charset "utf-8";
+
+div.comment-read
+{
+		padding-left: 12px;
+		margin-top: 20px;
+		display: none;
+}
+
+div.comment-date
+{
+		color: #D20000;
+		margin-bottom: 5px;
+}
+
+div.comment-data
+{
+		line-height: 20px;
+		font-size: 14px;
+		word-wrap: break-word;
+		word-break: break-all;
+}
+
+span.comment-nickname
+{
+    color: #3FA7CB;
+    margin-right: 7px;
+}

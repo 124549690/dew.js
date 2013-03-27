@@ -1,0 +1,44 @@
+[
+    {
+        "url" : "/user/login", 
+        "method" : "get", 
+        "flow" : 
+        [
+            {
+                "controller" : "UserController", 
+                "action" : "userAuthFlow"
+            }
+        ], 
+        "dispatch" : 
+        {
+            "controller" : "UserController", 
+            "action" : "indexAction"
+        }
+    }, 
+    
+    {
+        "url" : "/user/login", 
+        "method" : "post", 
+        "dispatch" : 
+        {
+            "controller" : "UserController", 
+            "action" : "loginAction"
+        }
+    }, 
+    
+    {
+        "url" : "/user/logout", 
+        "flow" : 
+        [
+            {
+                "controller" : "UserController", 
+                "action" : "userAuthFlow"
+            }
+        ], 
+        "dispatch" : 
+        {
+            "controller" : "UserController", 
+            "action" : "logoutAction"
+        }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "url" : "/", 
+        "param" : {"page" : 1}, 
+        "dispatch" : 
+        {
+            "controller" : "MessageController", 
+            "action" : "readAction"
+        }
+    }, 
+    
+    {
+        "url" : "/valid/validCode", 
+        "dispatch" : 
+        {
+            "controller" : "ValidController", 
+            "action" : "validCodeAction"
+        }
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "url" : "/admin/post/view/:page", 
+        "param" : {"page" : 1}, 
+        "dispatch" : 
+        {
+            "controller" : "AdminPostController", 
+            "action" : "viewAction"
+        }
+    }, 
+    
+    {
+        "url" : "/admin/post/edit/:pid", 
+        "dispatch" : 
+        {
+            "controller" : "AdminPostController", 
+            "action" : "editAction"
+        }
+    }, 
+    
+    {
+        "url" : "/admin/post/save/:pid", 
+        "method" : "post", 
+        "dispatch" : 
+        {
+            "controller" : "AdminPostController", 
+            "action" : "saveAction"
+        }
+    }, 
+    
+    {
+        "url" : "/admin/post/add", 
+        "method" : "post", 
+        "dispatch" : 
+        {
+            "controller" : "AdminPostController", 
+            "action" : "addAction"
+        }
+    }, 
+    
+    {
+        "url" : "/admin/post/del/:pid", 
+        "dispatch" : 
+        {
+            "controller" : "AdminPostController", 
+            "action" : "delAction"
+        }
+    }
+]

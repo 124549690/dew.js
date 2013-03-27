@@ -1,0 +1,26 @@
+[
+    {
+        "load" : "IndexRoute.json", 
+        "extend" : 
+        {
+            "allow" : ["session"]
+        }
+    }, 
+    
+    {
+        "load" : "MessageRoute.json", 
+        "extend" : 
+        {
+            "allow" : ["session"]
+        }
+    }, 
+    
+    {
+        "load" : "UserRoute.json", 
+        "extend" : 
+        {
+            "method" : "post", 
+            "allow" : ["session"]
+        }
+    }
+]

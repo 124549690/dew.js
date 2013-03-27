@@ -1,0 +1,152 @@
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* 作者: 刘昭辉(liuzhaohui)                                                   */
+/* QQ号: 50081449                                                             */
+/* QQ群: 30715306                                                             */
+/* 邮件: hi.liuzhaoxin@gmail.com                                              */
+/*                                                                            */
+/* 警告: 请尊重原作者的劳动成果，改版或再次发行请保留原作者名和联系方式       */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+@charset "utf-8";
+body{padding:0;margin:0;font-family: Tahoma, sans-serif;}
+
+
+/** outError 信息框 **/
+/*********************************************************************************/
+.outerror
+{
+		padding: 16px 0px 0px 16px;
+}
+.outerror span
+{
+		display:inline-block;
+		font-size:12px;
+		padding-left: 8px;
+}
+.outerror_button div{ float:left;}
+
+.outError_image1,.outError_image2,.outError_image3
+{
+		background:url('image/state/state1.png') no-repeat;
+		display:block;
+		vertical-align:middle;
+		width:32px;
+		height:32px;
+		padding:0px;
+		margin:0px;
+}
+.outError_image1{background-position:0px 1px;}
+.outError_image2{background-position:-40px 0px;}
+.outError_image3{background-position:-80px 0px;}
+/*********************************************************************************/
+
+
+/*
+<div class="loading"><span class="loading_image"></span><span class="loading_text">loading...</span></div>
+*/
+/** loading **/
+/*********************************************************************************/
+.loading
+{
+		height:32px;
+		position:absolute;
+		top:0px;
+		left:0px;
+}
+.loading_image
+{
+		background:url('image/state/loading.gif') no-repeat;
+		width:32px;
+		height:32px;
+		display:inline-block;
+}
+.loading_text
+{
+		font-size:18px;
+		vertical-align:40%;
+		padding-left:6px;
+}
+/*********************************************************************************/
+
+
+/** DIV 模拟层 **/
+/*********************************************************************************/
+.box_main
+{
+		position:absolute;
+		width:320px;
+		height:90px;
+		border:1px #8AB0DE solid;
+		background-color:white;
+		left:0px;
+		top:0px;
+		color: #3B3B3B;
+}
+.box_title
+{
+		cursor:move;
+		border-bottom:1px #8AB0DE solid;
+		height:21px;
+		background-image:url('image/boxStyle/title.png');
+		background-repeat:repeat-x;
+}
+.box_title span
+{
+		font-size:12px;
+		font-weight:bold;
+		position:relative;
+		float:left;
+		top:4px;
+		left:6px;
+}
+.box_close
+{
+		background-image:url('image/boxStyle/close1.png');
+		background-repeat:no-repeat;
+		background-position:-1px 2px;
+		width:36px;
+		height:17px;
+		float:right;
+}
+.box_close:hover{background-position: -1px -17px;}
+.box_content
+{
+
+}
+
+/*********************************************************************************/
+
+
+/*********************************************************************************/
+/** textarea 字数统计 **/
+/*********************************************************************************/
+.countNumber,.countNumberError{font-size:20px;display:inline-block;width:32px;padding:0px 2px 0px 2px;text-align:center;}
+.countNumber{color:black; font-family:Georgia,Tahoma,Arial; font-size:20px;}
+.countNumberError{color:red; font-family:Georgia,Tahoma,Arial; font-size:20px;}
+/*********************************************************************************/
+
+/*********************************************************************************/
+/** button begin **/
+/*********************************************************************************/
+.button6,.button5,.button4{border-top:1px solid #CCC;border-left:1px solid #CCC;border-bottom:1px solid #999;border-right:1px solid #999;display:inline-block;color:#333;
+background: #CCC url('image/buttonStyle/button.png') repeat-y 0px -30px;}
+.button6 button,.button5 button,.button4 button{text-align:center;cursor:pointer;border-width:0px;
+background-color:transparent;letter-spacing:1px;color:#333;}
+.button6 button,.button6{height:22px;width:44px;font-size:12px;}
+.button5 button,.button5{height: 28px;width:68px;font-size:16px;}
+.button4 button,.button4{height: 30px;width:72px;font-size:16px;}
+/*********************************************************************************/
+
+/*********************************************************************************/
+.input5,.input6
+{font-size:12px;margin:0px;padding: 0px;}
+.input5 label,.input6 label
+{letter-spacing:2px;color:#595959;vertical-align:middle;padding-right:4px;}
+.input5 input,.input6 input
+{border-top:#B6B6B6 solid 1px;border-bottom:#B6B6B6 solid 1px;border-left:#B6B6B6 solid 1px;border-right:#B6B6B6 solid 1px;vertical-align:middle;background:transparent url('image/input/input.gif');font-weight:bold;}
+
+.input5 input{width:168px;font-size:16px;height:18px;padding:4px;}
+
+.input6 input{width:72px;font-size:16px;height:18px;padding:4px;text-align:center;text-transform:uppercase;}
+/*********************************************************************************/

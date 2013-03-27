@@ -1,0 +1,77 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+@charset "utf-8";
+
+div.dewlog-config
+{
+    margin-top: 20px;
+    padding-left: 12px;
+		display: none;
+}
+
+div.config-item
+{
+		margin-bottom: 20px;
+}
+
+div.config-item-title
+{
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		background-color: #D4D4D4;
+		padding: 2px 16px;
+		color: #444444;
+		display: inline;
+		line-height: 15px;
+}
+
+div.config-item-wrap input
+{
+		border-top-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		width: 860px;
+		border: 1px solid #BBBBBB;
+		font-size: 16px;
+		padding: 4px;
+}
+
+div.config-item-select
+{
+		border-top-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border: 1px solid #BBBBBB;
+		width: 855px;
+		margin: 2px 0;
+		padding: 6px;
+}
+
+div.item-select-radio
+{
+		float: left;
+		line-height: 14px;
+		margin-right: 10px;
+}
+
+div.item-select-radio input,
+div.item-select-radio label
+{
+		vertical-align: middle;
+}
+
+div.formButton, div.formButton button
+{
+		color: #333333;
+		font-size: 16px;
+		height: 28px;
+		width: 68px;
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "url" : "/user/login", 
+        "dispatch" : 
+        {
+            "controller" : "UserController", 
+            "action" : "loginAction"
+        }
+    }, 
+    
+    {
+        "url" : "/user/logout", 
+        "dispatch" : 
+        {
+            "controller" : "UserController", 
+            "action" : "logoutAction"
+        }
+    }
+]

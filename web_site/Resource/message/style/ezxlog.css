@@ -1,0 +1,153 @@
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* 作者: 刘昭辉(liuzhaohui)                                                   */
+/* QQ号: 50081449                                                             */
+/* QQ群: 30715306                                                             */
+/* 邮件: hi.liuzhaoxin@gmail.com                                              */
+/*                                                                            */
+/* 警告: 请尊重原作者的劳动成果，改版或再次发行请保留原作者名和联系方式       */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+
+@charset "utf-8";
+
+body{background-color:#E6E6E6;}
+
+#valid_code
+{
+		display: inline;
+		margin: 0 0 0 7px;
+		cursor: default;
+		font-size: 14px;
+}
+
+/**
+ * 删除确认
+/**/
+/*********************************************************************************/
+.delete_box_main
+{
+    padding: 16px 0px 0px 16px;
+}
+.delete_box_main .button6
+{
+		float:left;
+}
+.delete_box_img
+{
+    background-image:url('image/doubt.png');
+    width:48px;
+    height:48px;
+    vertical-align:middle;
+    display:inline-block;
+}
+.delete_box_span
+{
+    padding-left:8px;
+    font-size:12px;
+}
+/*********************************************************************************/
+
+
+/**
+ * 登录框
+**/
+/**********************************************************/
+.login_main{margin:12px auto 0px auto;width:230px;}
+.login_main div{margin:4px 0px 4px 0px}
+.login_button{width:100%;height:30px;}
+.login_button div{margin-top:8px;position:relative;float:right;right:6px;}
+/**********************************************************/
+
+
+/**********************************************************/
+#container{margin: 0px auto 0px auto;width: 800px;}
+#content{position: relative; width: 800px; background-color: #F5F5F5; margin: 0px auto 0px auto; padding: 0px;}
+#user_login{position:absolute; right: 18px; top: 4px; font-size:12px; display: block; text-decoration:none; color: #5C5C5C;}
+#user_login:hover{text-decoration:underline; color: #000000; display: inline-block;}
+/**********************************************************/
+
+/**********************************************************/
+#top{border-bottom: 1px solid #DAECF6; position: relative; height: 26px; padding: 0px; margin: 0px; background-image:url('image/style.png'); background-repeat:repeat-x; background-position:0px -254px;}
+#top h3{color: #3B93D2; position: absolute; font-size: 14px; font-weight: bold; top: 6px; left: 10px; padding: 0px; margin: 0px;}
+/**********************************************************/
+
+/**
+ * 翻页样式
+**/
+/**********************************************************/
+.page{height: 28px;line-height: 14px;}
+.page ul{list-style-type: none; padding: 0px 20px 0px 0px; margin:0px; font-size: 12px; float: right;}
+.page li{float:left;}
+.page a{color: #34ACED;}
+.page span{color: #8C9DE7;}
+.page a,.page span{text-decoration: none;text-align: center;display: inline-block;padding: 4px 10px 4px 10px;}
+.page a:hover{color: #128CCC;padding: 3px 9px 3px 9px;border: 1px #B7D8EE solid;background-color: #D2EAF6;}
+/**********************************************************/
+
+/**
+ * 留言板样式
+**/
+/**********************************************************/
+#m_box,.m_message,.m_message_reply{border: 1px #D6D6D6 solid;}
+#m_box{width: 760px;margin: 16px auto 10px auto;}
+.m_message{background-color: #F5F5F5; margin: 12px 18px 12px 18px; font-size: 12px;}
+.m_message_reply{font-size: 12px; color: #5C5C5C; margin: 6px 18px 8px 34px;background-color:#FFFFFF;}
+.m_message_title{padding: 6px 0px 0px 8px;display: inline-block;}
+.m_message_content{font-size: 14px;color: #5C5C5C;margin: 6px 20px 6px 24px;clear: both;}
+.m_message_nicknama,.m_message_date{display: inline-block;float:left;color: #5C5C5C;}
+.m_message_nicknama{width:100px;}
+.m_message_operation,.m_message_reply_operation{display:block;vertical-align:middle;margin-left:625px;}
+.m_message_operation{width:80px;height:14px;}
+.m_message_operation a,.m_message_reply_operation a{display: inline-block;text-decoration:none;}
+.m_message_operation a{color: #5C5C5C;float: right;margin: 0px 6px 0px 6px;}
+.m_message_reply_operation a{color: #5C5C5C;}
+.m_message_operation a:hover,.m_message_reply_operation a:hover{text-decoration:underline;color:#000000;}
+/**********************************************************/
+
+/**
+ * 留言样式
+**/
+/**********************************************************/
+.input_box{margin-left:18px;width:763px;height:130px;}
+.input_box_border{border:1px #D6D6D6 solid;}
+.input_box_border textarea{background-color:#F5F5F5; font-size:14px; line-height:16px; border-width:0px; margin:14px; overflow:auto; width:730px; height:52px}
+.input_box_nicknama,.input_box_code{margin-top:6px; line-height:30px; height:32px; float:left;}
+.input_box_nicknama label,.input_box_code label{color:#5C5C5C;font-size:14px;}
+.input_box_nicknama label{vertical-align:middle;}
+.input_box_nicknama input{width:120px; height:18px; font-size:14px; line-height:20px; padding-left:4px; border:1px solid #B9B9B9;}
+.input_box_code{padding-left:32px;}
+.input_box_code input{width: 58px; height:18px; line-height:20px; font-size: 18px; border:1px #B9B9B9 solid; text-align: center; text-transform:uppercase;}
+.input_box_code img{height:26px; width:90px; margin-left:2px; vertical-align:middle;}
+.input_box_button{float:right; margin-top:8px; color:#5C5C5C; height:32px;}
+
+#input_box_limit{float:left; font-size:12px; line-height:26px; padding-right:6px;}
+/**********************************************************/
+
+/**
+ * 页面尾部
+**/
+/**********************************************************/
+#footer
+{
+    position: relative;
+    border-top: 1px #DAECF6 solid;
+    background-color: #F5F5F5;
+    width: 800px;
+    height: 56px;
+    padding: 0px;
+    margin: 0px auto 0px auto;
+    font-size:12px;
+}
+#authorInfo
+{
+		line-height:16px;
+		padding:4px 0px 0px 18px;
+}
+#timerMark
+{
+		position:absolute;
+		right:20px;
+		bottom:6px;
+}
+/**********************************************************/

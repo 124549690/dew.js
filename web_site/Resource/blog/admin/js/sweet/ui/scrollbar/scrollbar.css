@@ -1,0 +1,212 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+
+div.uiScrollbar
+{
+		visibility: hidden;
+		
+		position: absolute;
+		width: 9px;
+		
+		/*
+		right: 10px;
+		*/
+}
+
+
+div.uiScrollbarContainer
+{
+		position: relative;
+		top: 14px;
+		width: 9px;
+}
+
+div.uiScrollbarBackground
+{
+		position: absolute;
+		width: 9px;
+}
+
+div.uiScrollbarBackgroundWrap
+{
+		position: absolute;
+		z-index: -10;
+		
+		opacity: 0.18;
+		filter: Alpha(opacity=18);
+}
+
+div.uiScrollbarBackgroundTop
+{
+		background: url("./images/scroll-background-semicircle.gif") no-repeat;
+		overflow: hidden;
+		width: 9px;
+		height: 3px;
+		float: left;
+}
+
+div.uiScrollbarBackgroundCenter
+{
+		background-color: #2C2C2C;
+		width: 9px;
+		float: left;
+}
+
+div.uiScrollbarBackgroundBottom
+{
+		background: url("./images/scroll-background-semicircle.gif") no-repeat 0 -7px;
+		width: 9px;
+		height: 3px;
+		float: left;
+}
+
+div.uiScrollbarHandler
+{
+		position: absolute;
+}
+
+div.uiScrollbarHandlerWrap
+{
+		position: absolute;
+		left: 1px;
+		z-index: -10;
+}
+
+div.uiScrollbarHandlerTop
+{
+		background: url("./images/scroll-button-semicircle.gif") no-repeat;
+		width: 7px;
+		height: 3px;
+		float: left;
+		overflow: hidden;
+		
+		opacity: 0.6;
+		filter: Alpha(opacity=60);
+}
+
+div.uiScrollbarHandlerTopHover
+{
+		background-position: 0 -5px;
+		
+		opacity: 1;
+		filter: Alpha(opacity=100);
+}
+
+div.uiScrollbarHandlerTopActive
+{
+		background-position: 0 -10px;
+		
+		opacity: 0.8;
+		filter: Alpha(opacity=80);
+}
+
+div.uiScrollbarHandlerCenter
+{
+		background-color: #E7E7E7;
+		width: 7px;
+		float: left;
+		
+		opacity: 0.6;
+		filter: Alpha(opacity=60);
+}
+
+div.uiScrollbarHandlerCenterHover
+{
+		background-color: #FFF;
+		
+		opacity: 1;
+		filter: Alpha(opacity=100);
+}
+
+div.uiScrollbarHandlerCenterActive
+{
+		background-color: #E8E8E8;
+		
+		opacity: 0.8;
+		filter: Alpha(opacity=80);
+}
+
+div.uiScrollbarHandlerBottom
+{
+		background: url("./images/scroll-button-semicircle.gif") no-repeat 0 -15px;
+		width: 7px;
+		height: 3px;
+		float: left;
+		overflow: hidden;
+		
+		opacity: 0.6;
+		filter: Alpha(opacity=60);
+}
+
+div.uiScrollbarHandlerBottomHover
+{
+		background-position: 0 -20px;
+		
+		opacity: 1;
+		filter: Alpha(opacity=100);
+}
+
+div.uiScrollbarHandlerBottomActive
+{
+		background-position: 0 -25px;
+		
+		opacity: 0.8;
+		filter: Alpha(opacity=80);
+}
+
+div.uiScrollbarArrowUp
+{
+		background: url("./images/scroll-direction-button.gif") no-repeat;
+		position: absolute;
+		top: 3px;
+		height: 7px;
+		width: 9px;
+		overflow: hidden;
+}
+
+div.uiScrollbarArrowUpHover
+{
+		background-position: 0 -9px;
+}
+
+div.uiScrollbarArrowUpActive
+{
+		background-position: 0 -18px;
+}
+
+div.uiScrollbarArrowDown
+{
+		background: url("./images/scroll-direction-button.gif") no-repeat 0 -45px;
+		position: absolute;
+		bottom: 3px;
+		height: 7px;
+		width: 9px;
+		overflow: hidden;
+}
+
+div.uiScrollbarArrowDownHover
+{
+		background-position: 0 -36px;
+}
+
+div.uiScrollbarArrowDownActive
+{
+		background-position: 0 -27px;
+}
+
+div.uiScrollbarBackgroundCover, 
+div.uiScrollbarHandlerCover
+{
+		background-image: url("./images/scroll-cover.gif");
+		position: relative;
+		width: 9px;
+		z-index: 10;
+}

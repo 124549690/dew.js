@@ -1,0 +1,50 @@
+[
+    {
+        "url" : "/comment/write/:pid", 
+        "method" : "post", 
+        "allow" : ["session"], 
+        "dispatch" : 
+        {
+            "controller" : "CommentController", 
+            "action" : "writeAction"
+        }
+    }, 
+    
+    {
+        "url" : "/comment/read/:pid/:page", 
+        "param" : {"page" : 1}, 
+        "dispatch" : 
+        {
+            "controller" : "CommentController", 
+            "action" : "readAction"
+        }
+    }, 
+    
+    {
+        "url" : "/comment/view/:page", 
+        "param" : {"page" : 1}, 
+        "dispatch" : 
+        {
+            "controller" : "CommentController", 
+            "action" : "viewAction"
+        }
+    }, 
+    
+    {
+        "url" : "/comment/del/:cid", 
+        "dispatch" : 
+        {
+            "controller" : "CommentController", 
+            "action" : "delAction"
+        }
+    }, 
+    
+    {
+        "url" : "/comment/readOne/:cid", 
+        "dispatch" : 
+        {
+            "controller" : "CommentController", 
+            "action" : "readOneAction"
+        }
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "url" : "/", 
+        "dispatch" : 
+        {
+            "controller" : "IndexController", 
+            "action" : "indexAction"
+        }
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "url" : "/options/set", 
+        "method" : "post", 
+        "dispatch" : 
+        {
+            "controller" : "OptionsController", 
+            "action" : "setAction"
+        }
+    }, 
+    {
+        "url" : "/options/get", 
+        "dispatch" : 
+        {
+            "controller" : "OptionsController", 
+            "action" : "getAction"
+        }
+    }
+]

@@ -1,0 +1,103 @@
+/**
+ *
+ * @author          liuzhaohui
+ * @contact         Email: hi.liuzhaoxin@gmail.com, QQ: 50081449, QQqun: 30715306
+ *
+ * -----------------------------
+ * Happy Coding
+ *
+**/
+
+@charset "utf-8";
+
+div.log-table
+{
+		display: none;
+		font-size: 14px;
+		color: #222;
+}
+
+div.log-table-item
+{
+		border-bottom: 1px solid #E5E5E5;
+		cursor: pointer;
+		width: 100%;
+		clear: both;
+}
+
+div.log-table-item-focus
+{
+		background-color: #FFFFCC;
+}
+
+div.log-table-item-focus .log-item-select-block
+{
+		background: url("../images/checkmark.png") no-repeat -4px -3px transparent;
+}
+
+div.log-table-item p
+{
+		height: 24px;
+		line-height: 24px;
+		float: left;
+		padding: 2px 0;
+		margin-right: 14px;
+}
+
+p.log-item-title, 
+p.log-item-content
+{
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+}
+
+p.log-item-select
+{
+		width: 40px;
+}
+
+p.log-item-title
+{
+		width: 186px;
+}
+
+p.log-item-content
+{
+		width: 540px;
+}
+
+p.log-item-date
+{
+		margin-right: 0!important;
+		text-align: right;
+		width: 80px;
+}
+
+span.log-item-select-border
+{
+		line-height: 1px;
+		font-size: 1px;
+		display: inline-block;
+		width: 11px;
+		height: 11px;
+		
+		margin: 1px 0 0 1px;
+		
+		border: 1px solid #C2C2C2;
+		border-radius: 1px 1px 1px 1px;
+}
+
+span.log-item-select-block
+{
+		line-height: 1px;
+		font-size: 1px;
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		
+		margin-left: 20px;
+		
+		*margin-top: 3px;
+		_margin-top: 3px;
+}

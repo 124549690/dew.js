@@ -1,0 +1,30 @@
+[
+    {
+        "url" : "/message/read", 
+        "param" : {"page" : 1, "isajax" : 0}, 
+        "dispatch" : 
+        {
+            "controller" : "MessageController", 
+            "action" : "readAction"
+        }
+    }, 
+    
+    {
+        "url" : "/message/add", 
+        "method" : "post", 
+        "dispatch" : 
+        {
+            "controller" : "MessageController", 
+            "action" : "addAction"
+        }
+    }, 
+    
+    {
+        "url" : "/message/remove", 
+        "dispatch" : 
+        {
+            "controller" : "MessageController", 
+            "action" : "removeAction"
+        }
+    }
+]

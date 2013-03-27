@@ -1,0 +1,40 @@
+[
+    {
+        "url" : "/posts/:page", 
+        "param" : {"page" : 1}, 
+        "dispatch" : 
+        {
+            "controller" : "PostController", 
+            "action" : "getsAction"
+        }
+    }, 
+    
+    {
+        "url" : "/post/:pid", 
+        "dispatch" : 
+        {
+            "controller" : "PostController", 
+            "action" : "getAction"
+        }
+    }, 
+    
+    {
+        "url" : "/post/vaildpass/:pid", 
+        "method" : "get", 
+        "dispatch" : 
+        {
+            "controller" : "PostController", 
+            "action" : "vaildPwdAction"
+        }
+    }, 
+    
+    {
+        "url" : "/post/vaildpass/:pid", 
+        "method" : "post", 
+        "dispatch" : 
+        {
+            "controller" : "PostController", 
+            "action" : "vaildPwdAction"
+        }
+    }
+]
